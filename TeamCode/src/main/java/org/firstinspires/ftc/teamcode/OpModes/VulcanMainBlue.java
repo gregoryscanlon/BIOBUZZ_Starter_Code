@@ -10,7 +10,6 @@ import org.firstinspires.ftc.teamcode.Subsystems.VulcanLift;
 import org.firstinspires.ftc.teamcode.Subsystems.VulcanShooter;
 import org.firstinspires.ftc.teamcode.Subsystems.VulcanTurretBlue;
 import org.firstinspires.ftc.teamcode.Subsystems.VulcanTurretRed;
-import org.firstinspires.ftc.teamcode.trailblazer.drivebase.Drive;
 
 @TeleOp
 public class VulcanMainBlue extends OpMode {
