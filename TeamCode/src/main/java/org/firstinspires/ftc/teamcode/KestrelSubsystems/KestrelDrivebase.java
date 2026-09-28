@@ -6,6 +6,8 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
+import org.firstinspires.ftc.robotcore.external.Telemetry;
+
 public class KestrelDrivebase {
 
 	DcMotorEx bLMotor;
@@ -38,7 +40,7 @@ public class KestrelDrivebase {
 		fRMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 	}
 
-	public void update(Gamepad gamepad1) {
+	public void update(Gamepad gamepad1, Telemetry telemetry) {
 //		TODO: Set variable constants to correct off center strafing
 		double x = gamepad1.left_stick_x;
 		double y = -gamepad1.left_stick_y;
