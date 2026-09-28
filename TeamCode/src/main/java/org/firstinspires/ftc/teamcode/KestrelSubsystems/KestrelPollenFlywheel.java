@@ -20,6 +20,7 @@ public class KestrelPollenFlywheel {
 
 	public void update(Gamepad gamepad2, double pollenFlywheelSpeed, boolean pollenFlywheelState) {
 		setPollenFlywheelState(gamepad2);
+		changePollenFlywheelSpeed(gamepad2);
 		pollenFlywheelOnOff(pollenFlywheelSpeed, pollenFlywheelState);
 	}
 
@@ -36,8 +37,8 @@ public class KestrelPollenFlywheel {
 	}
 
 	public void changePollenFlywheelSpeed(Gamepad gamepad2) {
-		if (gamepad2.right_stick_y != 0) {
-			pollenFlywheelSpeed += gamepad2.right_stick_y;
+		if (gamepad2.left_stick_y != 0) {
+			pollenFlywheelSpeed += gamepad2.left_stick_y;
 		}
 	}
 
