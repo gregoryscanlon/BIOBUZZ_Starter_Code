@@ -38,7 +38,7 @@ public class KestrelPollenHood {
 		pollenHoodPosition = Math.max(pollenHoodPosition, 0.04);
 
 		dpadUpIsPressed = gamepad2.dpad_up;
-		dpadDownIsPressed = gamepad2.dpad_down
+		dpadDownIsPressed = gamepad2.dpad_down;
 	}
 
 	public void movePollenHood(double hoodPosition) {

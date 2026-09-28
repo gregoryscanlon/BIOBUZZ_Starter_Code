@@ -20,6 +20,7 @@ public class KestrelNectarFlywheel {
 
 	public void update(Gamepad gamepad2, double nectarFlywheelSpeed, boolean nectarFlywheelState) {
 		setNectarFlywheelState(gamepad2);
+		changeNectarFlywheelSpeed(gamepad2);
 		nectarFlywheelOnOff(nectarFlywheelSpeed, nectarFlywheelState);
 	}
 
