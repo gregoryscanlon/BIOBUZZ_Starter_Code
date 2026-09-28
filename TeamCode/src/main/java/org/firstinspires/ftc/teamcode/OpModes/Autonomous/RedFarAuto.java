@@ -4,12 +4,12 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-import org.firstinspires.ftc.teamcode.Subsystems.VulcanHood;
-import org.firstinspires.ftc.teamcode.Subsystems.VulcanIntake;
-import org.firstinspires.ftc.teamcode.Subsystems.VulcanLift;
-import org.firstinspires.ftc.teamcode.Subsystems.VulcanShooter;
-import org.firstinspires.ftc.teamcode.Subsystems.VulcanTurretBlue;
-import org.firstinspires.ftc.teamcode.Subsystems.VulcanTurretRed;
+import org.firstinspires.ftc.teamcode.VulcanSubsystems.VulcanHood;
+import org.firstinspires.ftc.teamcode.VulcanSubsystems.VulcanIntake;
+import org.firstinspires.ftc.teamcode.VulcanSubsystems.VulcanLift;
+import org.firstinspires.ftc.teamcode.VulcanSubsystems.VulcanShooter;
+import org.firstinspires.ftc.teamcode.VulcanSubsystems.VulcanTurretBlue;
+import org.firstinspires.ftc.teamcode.VulcanSubsystems.VulcanTurretRed;
 import org.firstinspires.ftc.teamcode.trailblazer.drivebase.Drive;
 import org.firstinspires.ftc.teamcode.trailblazer.path.Path;
 import org.firstinspires.ftc.teamcode.trailblazer.path.PathBuilder;
