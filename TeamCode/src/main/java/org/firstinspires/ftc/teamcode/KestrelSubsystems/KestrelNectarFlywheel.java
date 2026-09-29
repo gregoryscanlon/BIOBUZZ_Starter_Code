@@ -24,7 +24,7 @@ public class KestrelNectarFlywheel {
 		nectarFlywheelOnOff(nectarFlywheelSpeed, nectarFlywheelState);
 	}
 
-	public void setNectarFlywheelState(Gamepad gamepad2) {
+	public boolean setNectarFlywheelState(Gamepad gamepad2) {
 
 		if (!bumperIsPressed) {
 			if (gamepad2.right_bumper) {
@@ -34,12 +34,14 @@ public class KestrelNectarFlywheel {
 
 		bumperIsPressed = gamepad2.right_bumper;
 
+		return nectarFlywheelState;
 	}
 
-	public void changeNectarFlywheelSpeed(Gamepad gamepad2) {
+	public double changeNectarFlywheelSpeed(Gamepad gamepad2) {
 		if (gamepad2.right_stick_y != 0) {
 			nectarFlywheelSpeed += gamepad2.right_stick_y;
 		}
+		return nectarFlywheelSpeed;
 	}
 
 	public void nectarFlywheelOff() {

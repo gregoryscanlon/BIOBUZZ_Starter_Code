@@ -24,7 +24,7 @@ public class KestrelPollenFlywheel {
 		pollenFlywheelOnOff(pollenFlywheelSpeed, pollenFlywheelState);
 	}
 
-	public void setPollenFlywheelState(Gamepad gamepad2) {
+	public boolean setPollenFlywheelState(Gamepad gamepad2) {
 
 		if (!bumperIsPressed) {
 			if (gamepad2.right_bumper) {
@@ -34,12 +34,15 @@ public class KestrelPollenFlywheel {
 
 		bumperIsPressed = gamepad2.right_bumper;
 
+		return pollenFlywheelState;
 	}
 
-	public void changePollenFlywheelSpeed(Gamepad gamepad2) {
+	public double changePollenFlywheelSpeed(Gamepad gamepad2) {
 		if (gamepad2.left_stick_y != 0) {
 			pollenFlywheelSpeed += gamepad2.left_stick_y;
 		}
+
+		return pollenFlywheelSpeed;
 	}
 
 	public void pollenFlywheelOff() {
